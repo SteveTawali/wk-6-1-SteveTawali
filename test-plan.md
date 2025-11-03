@@ -1,0 +1,193 @@
+# 📝 Bookstore Application Test Plan
+
+## 1. Objective and Scope
+
+### 1.1 Objective
+To ensure the quality, reliability, and functionality of the Bookstore application through comprehensive testing of all core features, user flows, and non-functional requirements.
+
+### 1.2 Scope
+This test plan covers the following major components:
+- User Authentication and Authorization
+- Catalog and Book Discovery
+- Shopping Cart and Checkout Process
+- Payment Integration (Paystack)
+- Order Management
+- Reviews and Community Features
+- Admin Console
+- Notifications System
+
+## 2. In-Scope Features
+
+### 2.1 Core Features (FR Codes)
+- **Cart & Checkout (FR-O01, FR-O02)**
+  - Add/remove/update cart items
+  - Checkout wizard flow
+  - Form validation
+  - Data persistence
+
+- **Payment Processing (FR-O03)**
+  - Paystack integration
+  - Currency handling
+  - Transaction verification
+  - Error handling
+
+- **Order Management (FR-O04, FR-O05)**
+  - Order history
+  - Status transitions
+  - CSV export functionality
+  - Order timeline
+
+- **Returns & Refunds (FR-R01, FR-R02, FR-R03)**
+  - Return window validation
+  - Refund processing
+  - Admin approval workflow
+
+- **User Generated Content (FR-U01, FR-U02, FR-U03)**
+  - Reviews system
+  - Q&A functionality
+  - Content moderation
+
+- **Admin Features (FR-M01 to FR-M05)**
+  - Catalog management
+  - Inventory control
+  - Order processing
+  - Moderation tools
+
+- **Notifications (FR-N01, FR-N02)**
+  - Notification system
+  - Read/unread status
+
+### 2.2 Non-Functional Requirements
+- **Accessibility (FR-X01)**
+  - WCAG 2.1 AA compliance
+  - Screen reader compatibility
+  - Keyboard navigation
+
+- **Performance (FR-X02)**
+  - Load time metrics
+  - Image optimization
+  - Layout stability
+
+- **Security (FR-S01, FR-S02, FR-S03)**
+  - Content sanitization
+  - URL validation
+  - Storage security
+
+## 3. Out-of-Scope
+- Backend service implementation
+- Real payment processing
+- PII storage beyond test email
+- Multi-currency catalog management
+- Shipping carrier integration
+- Tax calculation logic
+
+## 4. Test Environments
+
+### 4.1 Browsers
+- Chrome (latest 2 versions)
+- Firefox (latest 2 versions)
+- Safari (latest 2 versions)
+- Edge (latest 2 versions)
+
+### 4.2 Devices/Viewports
+- Desktop (1920×1080, 1366×768)
+- Tablet (iPad 768×1024)
+- Mobile (iPhone 375×667)
+
+### 4.3 Network Conditions
+- Fast 3G
+- Slow 3G
+- Offline capability
+
+## 5. Testing Tools
+
+### 5.1 Testing Frameworks
+- Jest for unit testing
+- React Testing Library for component testing
+- Cypress for E2E testing
+
+### 5.2 Specialized Tools
+- Lighthouse for performance testing
+- WAVE/axe for accessibility testing
+- Chrome DevTools for network throttling
+- Screen readers (NVDA, VoiceOver)
+
+## 6. Test Types
+
+### 6.1 Unit Testing
+- Components
+- Utils
+- Services
+- State management
+
+### 6.2 Integration Testing
+- Component interactions
+- API integration
+- State management integration
+- Router integration
+
+### 6.3 E2E Testing
+- User flows
+- Happy paths
+- Error scenarios
+- Edge cases
+
+### 6.4 Performance Testing
+- Loading performance
+- Runtime performance
+- Network resilience
+- Resource optimization
+
+### 6.5 Accessibility Testing
+- Screen reader compatibility
+- Keyboard navigation
+- ARIA implementation
+- Color contrast
+
+### 6.6 Security Testing
+- XSS prevention
+- Input validation
+- URL scheme validation
+- Storage security
+
+## 7. Risks and Mitigations
+
+### 7.1 Identified Risks
+1. Payment integration failures
+2. Performance degradation with large catalogs
+3. Data persistence issues
+4. Browser compatibility issues
+5. Security vulnerabilities in UGC
+
+### 7.2 Mitigations
+1. Comprehensive payment flow testing
+2. Performance monitoring and optimization
+3. Robust error handling
+4. Cross-browser testing
+5. Content sanitization and validation
+
+## 8. Entry Criteria
+- Code complete and deployed to test environment
+- All dependencies installed and configured
+- Test data available
+- Test environments ready
+- Required tools and access available
+
+## 9. Exit Criteria
+- All planned test cases executed
+- No critical or high-severity bugs open
+- Performance metrics meet targets
+- Accessibility compliance verified
+- Security vulnerabilities addressed
+
+## 10. Known Issues (Intentional)
+1. Currency mismatch in payment gateway
+2. Rounding variance in totals
+3. Return window off-by-one error
+4. XSS via markdown links
+5. Stock race condition
+6. Modal accessibility issues
+7. CSV decimal formatting
+8. Notification badge update issue
+9. Image lazy loading regression
+10. Search diacritics normalization
