@@ -95,22 +95,20 @@ This test plan covers the following major components:
 - Mobile (iPhone 375×667)
 
 ### 4.3 Network Conditions
-- Fast 3G
-- Slow 3G
+- Wifi
+- Fast 
+- Slow 
 - Offline capability
 
 ## 5. Testing Tools
 
 ### 5.1 Testing Frameworks
 - Jest for unit testing
-- React Testing Library for component testing
-- Cypress for E2E testing
 
 ### 5.2 Specialized Tools
 - Lighthouse for performance testing
 - WAVE/axe for accessibility testing
 - Chrome DevTools for network throttling
-- Screen readers (NVDA, VoiceOver)
 
 ## 6. Test Types
 
@@ -135,7 +133,6 @@ This test plan covers the following major components:
 ### 6.4 Performance Testing
 - Loading performance
 - Runtime performance
-- Network resilience
 - Resource optimization
 
 ### 6.5 Accessibility Testing
@@ -144,12 +141,6 @@ This test plan covers the following major components:
 - ARIA implementation
 - Color contrast
 
-### 6.6 Security Testing
-- XSS prevention
-- Input validation
-- URL scheme validation
-- Storage security
-
 ## 7. Risks and Mitigations
 
 ### 7.1 Identified Risks
@@ -157,7 +148,6 @@ This test plan covers the following major components:
 2. Performance degradation with large catalogs
 3. Data persistence issues
 4. Browser compatibility issues
-5. Security vulnerabilities in UGC
 
 ### 7.2 Mitigations
 1. Comprehensive payment flow testing
@@ -178,7 +168,6 @@ This test plan covers the following major components:
 - No critical or high-severity bugs open
 - Performance metrics meet targets
 - Accessibility compliance verified
-- Security vulnerabilities addressed
 
 ## 10. Known Issues (Intentional)
 1. Currency mismatch in payment gateway
