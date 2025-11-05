@@ -18,57 +18,57 @@ This test plan covers the following major components:
 
 ## 2. In-Scope Features
 
-### 2.1 Core Features (FR Codes)
-- **Cart & Checkout (FR-O01, FR-O02)**
+### 2.1 Core Features 
+- **Cart & Checkout**
   - Add/remove/update cart items
   - Checkout wizard flow
   - Form validation
   - Data persistence
 
-- **Payment Processing (FR-O03)**
+- **Payment Processing**
   - Paystack integration
   - Currency handling
   - Transaction verification
   - Error handling
 
-- **Order Management (FR-O04, FR-O05)**
+- **Order Management**
   - Order history
   - Status transitions
   - CSV export functionality
   - Order timeline
 
-- **Returns & Refunds (FR-R01, FR-R02, FR-R03)**
+- **Returns & Refunds**
   - Return window validation
   - Refund processing
   - Admin approval workflow
 
-- **User Generated Content (FR-U01, FR-U02, FR-U03)**
+- **User Generated Content**
   - Reviews system
   - Q&A functionality
   - Content moderation
 
-- **Admin Features (FR-M01 to FR-M05)**
+- **Admin Features**
   - Catalog management
   - Inventory control
   - Order processing
   - Moderation tools
 
-- **Notifications (FR-N01, FR-N02)**
+- **Notifications**
   - Notification system
   - Read/unread status
 
 ### 2.2 Non-Functional Requirements
-- **Accessibility (FR-X01)**
+- **Accessibility**
   - WCAG 2.1 AA compliance
   - Screen reader compatibility
   - Keyboard navigation
 
-- **Performance (FR-X02)**
+- **Performance**
   - Load time metrics
   - Image optimization
   - Layout stability
 
-- **Security (FR-S01, FR-S02, FR-S03)**
+- **Security**
   - Content sanitization
   - URL validation
   - Storage security
