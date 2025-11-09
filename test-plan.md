@@ -11,9 +11,7 @@ This test plan covers the following major components:
 - Catalog and Book Discovery
 - Shopping Cart and Checkout Process
 - Payment Integration (Paystack)
-- Order Management
 - Reviews and Community Features
-- Admin Console
 - Notifications System
 
 ## 2. In-Scope Features
@@ -31,12 +29,6 @@ This test plan covers the following major components:
   - Transaction verification
   - Error handling
 
-- **Order Management**
-  - Order history
-  - Status transitions
-  - CSV export functionality
-  - Order timeline
-
 - **Returns & Refunds**
   - Return window validation
   - Refund processing
@@ -46,12 +38,6 @@ This test plan covers the following major components:
   - Reviews system
   - Q&A functionality
   - Content moderation
-
-- **Admin Features**
-  - Catalog management
-  - Inventory control
-  - Order processing
-  - Moderation tools
 
 - **Notifications**
   - Notification system
@@ -68,10 +54,6 @@ This test plan covers the following major components:
   - Image optimization
   - Layout stability
 
-- **Security**
-  - Content sanitization
-  - URL validation
-  - Storage security
 
 ## 3. Out-of-Scope
 - Backend service implementation

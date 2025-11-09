@@ -16,7 +16,7 @@ export const StoreProvider = ({ children }) => {
   const [orders, setOrders] = useState(() => safeGetItem(STORAGE_KEYS.orders, []));
   const [coupons, setCoupons] = useState(() => safeGetItem(STORAGE_KEYS.coupons, []));
   const [notifications, setNotifications] = useState(() => safeGetItem(STORAGE_KEYS.notifications, []));
-  const [user, setUser] = useState(() => safeGetItem(STORAGE_KEYS.user, { role: 'user' }));
+  const [user, setUser] = useState(() => safeGetItem(STORAGE_KEYS.user, { role: 'admin' }));
   const [storageErrors, setStorageErrors] = useState([]);
 
   // Persist changes with graceful failure collection
