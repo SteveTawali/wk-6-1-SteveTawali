@@ -31,7 +31,7 @@
   - Cart counter increments
   - Book visible in cart with correct price
 - **Post-conditions**: Book present in cart
-- **Evidence:**: Screenshot 2025-11-10 at 01.45.23.png
+- **Evidence:**: <img width="1470" height="956" alt="Screenshot 2025-11-10 at 01 45 23" src="https://github.com/user-attachments/assets/e7b470c9-b5aa-4ebe-847a-15d4366d8d52" />
 
 ### ID: TC-CART-002
 - **Title**: Update Book Quantity in Cart
