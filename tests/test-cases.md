@@ -485,7 +485,7 @@
 **Post-conditions:** Order data is persisted in localStorage, order survives page refresh  
 **Evidence:** screenshots/order-persistence.png
 
-## 8. Navbar & Search
+## 6. Navbar & Search
 
 ### ID: TC-NAV-001
 **Title:** Navbar Search Input  
@@ -531,7 +531,7 @@
 **Post-conditions:** Search is cleared on route change  
 **Evidence:** screenshots/navbar-search-clear-route.png
 
-## 5. Performance Testing
+## 7. Performance Testing
 
 ### ID: TC-PERF-001
 - **Title**: Image Loading Performance
@@ -570,7 +570,7 @@
 - **Post-conditions**: App performs well on Fast 3G
 - **Evidence**: screenshots/perf-fast-3g.png
 
-## 6. Accessibility Testing
+## 8. Accessibility Testing
 
 ### ID: TC-ACC-001
 - **Title**: Keyboard Navigation
@@ -648,7 +648,7 @@
 - **Post-conditions**: All state persisted and restored correctly
 - **Evidence**: screenshots/e2e-session-persistence.png
 
-## 8. Cross-Browser Test Cases
+## 9. Cross-Browser Test Cases
 
 ### ID: TC-BROWSER-001
 - **Title**: Chrome Compatibility
@@ -697,7 +697,7 @@
 - **Post-conditions**: App fully functional in Edge
 - **Evidence**: screenshots/browser-edge.png
 
-## 11. Device Test Cases
+## 10. Device Test Cases
 
 ### ID: TC-DEVICE-001
 - **Title**: Mobile Responsiveness - iPhone (375×667)
@@ -829,7 +829,7 @@
 **Post-conditions:** User sees error message, can navigate back to catalog  
 **Evidence:** screenshots/edge-invalid-order-id.png
 
-## 13. Boundary Value Testing
+## 11. Boundary Value Testing
 
 ### ID: TC-BOUND-001
 **Title:** Maximum Quantity Value  
