@@ -15,7 +15,7 @@
   - Results update in real-time
 - **Post-conditions**: Search results displayed correctly
 - **Test Data**: Use existing book titles from books.js
-- **Evidence:**
+- **Evidence:** : Screenshot 2025-11-10 at 01.43.46.png
 
 ### ID: TC-CAT-001
 - **Title**: Add Book to Cart
@@ -31,7 +31,7 @@
   - Cart counter increments
   - Book visible in cart with correct price
 - **Post-conditions**: Book present in cart
-- **Evidence:**
+- **Evidence:**: Screenshot 2025-11-10 at 01.45.23.png
 
 ### ID: TC-CART-002
 - **Title**: Update Book Quantity in Cart
