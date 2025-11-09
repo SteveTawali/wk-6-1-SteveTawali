@@ -1,13 +1,13 @@
-## 1. Book Catalog Testing
+## 1. Book Catalog and Cart Testing (FR-O01)
 
-### ID: TC-CAT-001
+### ID: TC-CAT-000
 - **Title**: Search Books by Title
 - **Pre-conditions**: 
   - User is on catalog page
   - Books data is loaded
 - **Steps**:
   1. Click on search input field
-  2. Type a known book title
+  2. Type a known book title/description/author
   3. Wait for results to load
 - **Expected Result**: 
   - Matching books are displayed
@@ -15,24 +15,9 @@
   - Results update in real-time
 - **Post-conditions**: Search results displayed correctly
 - **Test Data**: Use existing book titles from books.js
+- **Evidence:**
 
-### ID: TC-CAT-002
-- **Title**: Filter Books by Price Range
-- **Pre-conditions**: 
-  - User is on catalog page
-  - Multiple books with different prices exist
-- **Steps**:
-  1. Locate price filter controls
-  2. Set minimum price
-  3. Set maximum price
-  4. Observe results
-- **Expected Result**: 
-  - Only books within price range shown
-  - Empty state message if no matches
-  - Price formatting correct
-- **Post-conditions**: Filtered list displayed
-
-### ID: TC-CART-001
+### ID: TC-CAT-001
 - **Title**: Add Book to Cart
 - **Pre-conditions**: 
   - User is viewing a book
@@ -46,6 +31,7 @@
   - Cart counter increments
   - Book visible in cart with correct price
 - **Post-conditions**: Book present in cart
+- **Evidence:**
 
 ### ID: TC-CART-002
 - **Title**: Update Book Quantity in Cart
@@ -62,6 +48,7 @@
   - Subtotal recalculates correctly
   - Cannot set quantity below 1
 - **Post-conditions**: Updated quantity reflected in cart
+- **Evidence:**
 
 ### ID: TC-CART-003
 - **Title**: Remove Book from Cart
@@ -76,10 +63,9 @@
   - Subtotal updates
   - Empty cart message if last item
 - **Post-conditions**: Book removed from cart
+- **Evidence:**
 
-## 2. Shopping Cart (FR-O01)
-
-### ID: TC-CART-001
+### ID: TC-CART-004
 **Title:** Add Item to Cart  
 **Pre-conditions:** User is on /catalog page, cart is empty  
 **Steps:**
@@ -90,7 +76,7 @@
 **Post-conditions:** Cart contains 1 item, cart count badge shows "1", localStorage app.cart contains book data  
 **Evidence:** screenshots/cart-add-item.png
 
-### ID: TC-CART-002
+### ID: TC-CART-005
 **Title:** Update Cart Quantity  
 **Pre-conditions:** User has items in cart, user is on /cart page  
 **Steps:**
@@ -101,7 +87,7 @@
 **Post-conditions:** Cart item quantity is 3, subtotal updated, localStorage app.cart updated  
 **Evidence:** screenshots/cart-update-quantity.png
 
-### ID: TC-CART-003
+### ID: TC-CART-006
 **Title:** Quantity Cannot Be Less Than 1  
 **Pre-conditions:** User has items in cart, user is on /cart page  
 **Steps:**
@@ -113,18 +99,7 @@
 **Post-conditions:** Quantity remains at minimum 1  
 **Evidence:** screenshots/cart-quantity-minimum.png
 
-### ID: TC-CART-004
-**Title:** Remove Item from Cart  
-**Pre-conditions:** User has items in cart, user is on /cart page  
-**Steps:**
-1. Click "Remove" button for a cart item
-2. Observe the cart list
-3. Check navbar cart badge count  
-**Expected Result:** Item is removed from cart list, cart badge count decreases, cart count badge updates  
-**Post-conditions:** Cart has one less item, localStorage app.cart updated, cart badge reflects new count  
-**Evidence:** screenshots/cart-remove-item.png
-
-### ID: TC-CART-005
+### ID: TC-CART-007
 **Title:** Calculate Subtotal Correctly  
 **Pre-conditions:** User has multiple items in cart with different quantities, user is on /cart page  
 **Steps:**
@@ -135,7 +110,7 @@
 **Post-conditions:** Subtotal is correctly calculated and displayed  
 **Evidence:** screenshots/cart-subtotal-calculation.png
 
-### ID: TC-CART-006
+### ID: TC-CART-008
 **Title:** Empty Cart State  
 **Pre-conditions:** Cart is empty  
 **Steps:**
@@ -146,7 +121,7 @@
 **Post-conditions:** Empty cart state is displayed  
 **Evidence:** screenshots/cart-empty-state.png
 
-### ID: TC-CART-007
+### ID: TC-CART-009
 **Title:** Cart Persistence Across Refresh  
 **Pre-conditions:** User has items in cart, user is on any page  
 **Steps:**
@@ -158,7 +133,7 @@
 **Post-conditions:** Cart data is persisted in localStorage, cart survives page refresh  
 **Evidence:** screenshots/cart-persistence.png
 
-### ID: TC-CART-008
+### ID: TC-CART-010
 **Title:** Cart Count Badge Updates  
 **Pre-conditions:** User is on any page, cart may have items  
 **Steps:**
@@ -169,7 +144,7 @@
 **Post-conditions:** Cart badge reflects accurate count, screen reader announces update  
 **Evidence:** screenshots/cart-badge-update.png
 
-### ID: TC-CART-009
+### ID: TC-CART-011
 **Title:** Proceed to Checkout Button  
 **Pre-conditions:** User has items in cart, user is on /cart page  
 **Steps:**
@@ -237,18 +212,6 @@
 **Evidence:** screenshots/checkout-review-items.png
 
 ### ID: TC-CHK-006
-**Title:** Review Step - Calculate Totals  
-**Pre-conditions:** User is on Review step (step 2), cart has items  
-**Steps:**
-1. Verify subtotal is displayed
-2. Verify shipping fee is displayed (4.99)
-3. Verify tax is displayed
-4. Verify total = subtotal + shipping + tax  
-**Expected Result:** Subtotal, Shipping (4.99), Tax (8% of subtotal), and Total are displayed, all values formatted to 2 decimal places with currency symbol  
-**Post-conditions:** All totals are calculated and displayed correctly  
-**Evidence:** screenshots/checkout-review-totals.png
-
-### ID: TC-CHK-007
 **Title:** Review Step - Back Button  
 **Pre-conditions:** User is on Review step (step 2), shipping form was filled  
 **Steps:**
@@ -259,7 +222,7 @@
 **Post-conditions:** User is back on Shipping step, form data is preserved  
 **Evidence:** screenshots/checkout-review-back.png
 
-### ID: TC-CHK-008
+### ID: TC-CHK-007
 **Title:** Payment Step - Display Payment Info  
 **Pre-conditions:** User is on Payment step (step 3)  
 **Steps:**
@@ -269,7 +232,7 @@
 **Post-conditions:** Payment step displays correctly  
 **Evidence:** screenshots/checkout-payment-step.png
 
-### ID: TC-CHK-009
+### ID: TC-CHK-008
 **Title:** Payment Step - Back Button  
 **Pre-conditions:** User is on Payment step (step 3)  
 **Steps:**
@@ -279,7 +242,7 @@
 **Post-conditions:** User is back on Review step  
 **Evidence:** screenshots/checkout-payment-back.png
 
-### ID: TC-CHK-010
+### ID: TC-CHK-009
 **Title:** Payment Step - Disabled When Cart Empty  
 **Pre-conditions:** Cart is empty  
 **Steps:**
@@ -289,7 +252,7 @@
 **Post-conditions:** Checkout is disabled when cart is empty  
 **Evidence:** screenshots/checkout-disabled-empty-cart.png
 
-### ID: TC-CHK-011
+### ID: TC-CHK-010
 **Title:** Confirmation Step - Success Message  
 **Pre-conditions:** Payment completed successfully, order was created  
 **Steps:**
@@ -300,7 +263,7 @@
 **Post-conditions:** User is redirected to order detail page, order status is "Paid"  
 **Evidence:** screenshots/checkout-confirmation.png
 
-### ID: TC-CHK-012
+### ID: TC-CHK-011
 **Title:** Form Data Persistence  
 **Pre-conditions:** User fills shipping form, user is on Review step  
 **Steps:**
@@ -451,18 +414,7 @@
 **Post-conditions:** Order totals are displayed correctly  
 **Evidence:** screenshots/order-totals.png
 
-### ID: TC-ORD-005
-**Title:** Shipping Information Display  
-**Pre-conditions:** User is on order detail page, order has shipping info  
-**Steps:**
-1. Verify shipping address section
-2. Verify all shipping fields are displayed
-3. Verify email is displayed  
-**Expected Result:** Shipping section displays: fullName, address, city, postalCode, country, email, all fields are visible  
-**Post-conditions:** Complete shipping information is displayed  
-**Evidence:** screenshots/order-shipping-info.png
-
-### ID: TC-ORD-007
+### ID: TC-ORD-006
 **Title:** Order Not Found Handling  
 **Pre-conditions:** User navigates to non-existent order ID  
 **Steps:**
@@ -473,7 +425,7 @@
 **Post-conditions:** Error state is displayed with navigation option  
 **Evidence:** screenshots/order-not-found.png
 
-### ID: TC-ORD-008
+### ID: TC-ORD-007
 **Title:** Order Persistence  
 **Pre-conditions:** Order is created, order exists in localStorage  
 **Steps:**
@@ -499,18 +451,6 @@
 **Evidence:** screenshots/navbar-search-input.png
 
 ### ID: TC-NAV-002
-**Title:** ESC Key Clears Search  
-**Pre-conditions:** User has entered search text in navbar search field  
-**Steps:**
-1. Enter text in search field
-2. Press ESC key
-3. Verify search is cleared
-4. Verify focus returns to input  
-**Expected Result:** Search field is cleared (empty value), focus returns to input field, input refocuses  
-**Post-conditions:** Search is cleared, focus is maintained  
-**Evidence:** screenshots/navbar-esc-clear.png
-
-### ID: TC-NAV-003
 **Title:** Navbar Search  
 **Pre-conditions:** User has entered search text in navbar search field  
 **Steps:**
@@ -519,7 +459,7 @@
 **Expected Result:** Search functionality works on catalog page  
 **Evidence:** screenshots/navbar-enter-navigate.png
 
-### ID: TC-NAV-004
+### ID: TC-NAV-003
 **Title:** Search Clears on Route Change  
 **Pre-conditions:** User has entered search text, user navigates to different page  
 **Steps:**
@@ -795,29 +735,8 @@
 **Post-conditions:** Order status unchanged, payment can be retried  
 **Evidence:** screenshots/edge-network-failure-payment.png
 
+
 ### ID: TC-EDGE-009
-**Title:** Paystack Script Loading Failure  
-**Pre-conditions:** User is on checkout step 3 (Payment)  
-**Steps:**
-1. Block Paystack script in browser (DevTools Network tab)
-2. Click "Pay Now" button
-3. Observe error handling  
-**Expected Result:** Error message displayed: "Failed to load payment service. Please refresh the page.", alert shown, payment does not proceed  
-**Post-conditions:** Payment not initiated, user can refresh and retry  
-**Evidence:** screenshots/edge-paystack-script-failure.png
-
-### ID: TC-EDGE-010
-**Title:** Invalid Paystack Public Key  
-**Pre-conditions:** REACT_APP_PAYSTACK_PUBLIC_KEY is invalid or missing  
-**Steps:**
-1. Set invalid Paystack key in environment
-2. Navigate to checkout and attempt payment
-3. Observe error handling  
-**Expected Result:** Alert displayed: "Paystack public key is missing or invalid…", payment does not proceed, error logged to console  
-**Post-conditions:** Payment blocked, user informed of configuration issue  
-**Evidence:** screenshots/edge-invalid-paystack-key.png
-
-### ID: TC-EDGE-011
 **Title:** Invalid Order ID Format  
 **Pre-conditions:** User attempts to access order with invalid ID  
 **Steps:**
