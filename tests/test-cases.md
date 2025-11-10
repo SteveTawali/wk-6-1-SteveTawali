@@ -15,9 +15,9 @@
   - Results update in real-time
 - **Post-conditions**: Search results displayed correctly
 - **Test Data**: Use existing book titles from books.js
-- **Evidence:** : Screenshot 2025-11-10 at 01.43.46.png
+- **Evidence:** : screenshots/search-book.png
 
-### ID: TC-CAT-001
+### ID: TC-CART-001
 - **Title**: Add Book to Cart
 - **Pre-conditions**: 
   - User is viewing a book
@@ -31,24 +31,18 @@
   - Cart counter increments
   - Book visible in cart with correct price
 - **Post-conditions**: Book present in cart
-- **Evidence:**: <img width="1470" height="956" alt="Screenshot 2025-11-10 at 01 45 23" src="https://github.com/user-attachments/assets/e7b470c9-b5aa-4ebe-847a-15d4366d8d52" />
+- **Evidence:** screenshots/cart-add-book.png
 
 ### ID: TC-CART-002
-- **Title**: Update Book Quantity in Cart
-- **Pre-conditions**: 
-  - Book exists in cart
-  - Initial quantity is 1
-- **Steps**:
-  1. Navigate to cart page
-  2. Find quantity input
-  3. Change quantity to 2
-  4. Observe subtotal update
-- **Expected Result**: 
-  - Quantity updates
-  - Subtotal recalculates correctly
-  - Cannot set quantity below 1
-- **Post-conditions**: Updated quantity reflected in cart
-- **Evidence:**
+**Title:** Update Cart Quantity  
+**Pre-conditions:** User has items in cart, user is on /cart page  
+**Steps:**
+1. Locate quantity input field for a cart item
+2. Change quantity value (e.g., to 2 or 3)
+3. Observe the subtotal calculation  
+**Expected Result:** Quantity input shows updated value, line item price = book.price × quantity, subtotal recalculates correctly, cannot set quantity below 1  
+**Post-conditions:** Cart item quantity is updated, subtotal updated, localStorage app.cart updated  
+**Evidence:** screenshots/cart-update-quantity.png
 
 ### ID: TC-CART-003
 - **Title**: Remove Book from Cart
@@ -63,31 +57,9 @@
   - Subtotal updates
   - Empty cart message if last item
 - **Post-conditions**: Book removed from cart
-- **Evidence:**
+- **Evidence:**: screenshots/remove-book.png
 
 ### ID: TC-CART-004
-**Title:** Add Item to Cart  
-**Pre-conditions:** User is on /catalog page, cart is empty  
-**Steps:**
-1. Click "Buy Now" button on a book card
-2. Navigate to Cart
-3. Verify the book appears in cart list  
-**Expected Result:** Book is displayed in cart with quantity 1  
-**Post-conditions:** Cart contains 1 item, cart count badge shows "1", localStorage app.cart contains book data  
-**Evidence:** screenshots/cart-add-item.png
-
-### ID: TC-CART-005
-**Title:** Update Cart Quantity  
-**Pre-conditions:** User has items in cart, user is on /cart page  
-**Steps:**
-1. Locate quantity input field for a cart item
-2. Change quantity value to 3
-3. Observe the subtotal calculation  
-**Expected Result:** Quantity input shows value "3", line item price = book.price × 3, subtotal recalculates correctly  
-**Post-conditions:** Cart item quantity is 3, subtotal updated, localStorage app.cart updated  
-**Evidence:** screenshots/cart-update-quantity.png
-
-### ID: TC-CART-006
 **Title:** Quantity Cannot Be Less Than 1  
 **Pre-conditions:** User has items in cart, user is on /cart page  
 **Steps:**
@@ -99,7 +71,7 @@
 **Post-conditions:** Quantity remains at minimum 1  
 **Evidence:** screenshots/cart-quantity-minimum.png
 
-### ID: TC-CART-007
+### ID: TC-CART-005
 **Title:** Calculate Subtotal Correctly  
 **Pre-conditions:** User has multiple items in cart with different quantities, user is on /cart page  
 **Steps:**
@@ -110,7 +82,7 @@
 **Post-conditions:** Subtotal is correctly calculated and displayed  
 **Evidence:** screenshots/cart-subtotal-calculation.png
 
-### ID: TC-CART-008
+### ID: TC-CART-006
 **Title:** Empty Cart State  
 **Pre-conditions:** Cart is empty  
 **Steps:**
@@ -121,7 +93,7 @@
 **Post-conditions:** Empty cart state is displayed  
 **Evidence:** screenshots/cart-empty-state.png
 
-### ID: TC-CART-009
+### ID: TC-CART-007
 **Title:** Cart Persistence Across Refresh  
 **Pre-conditions:** User has items in cart, user is on any page  
 **Steps:**
@@ -133,7 +105,7 @@
 **Post-conditions:** Cart data is persisted in localStorage, cart survives page refresh  
 **Evidence:** screenshots/cart-persistence.png
 
-### ID: TC-CART-010
+### ID: TC-CART-008
 **Title:** Cart Count Badge Updates  
 **Pre-conditions:** User is on any page, cart may have items  
 **Steps:**
@@ -144,7 +116,7 @@
 **Post-conditions:** Cart badge reflects accurate count, screen reader announces update  
 **Evidence:** screenshots/cart-badge-update.png
 
-### ID: TC-CART-011
+### ID: TC-CART-009
 **Title:** Proceed to Checkout Button  
 **Pre-conditions:** User has items in cart, user is on /cart page  
 **Steps:**
@@ -201,6 +173,42 @@
 **Evidence:** screenshots/checkout-shipping-submit.png
 
 ### ID: TC-CHK-005
+**Title:** Shipping Form - Postal Code Format Validation  
+**Pre-conditions:** User is on checkout step 1 (Shipping)  
+**Steps:**
+1. Fill all required fields
+2. Enter invalid postal code format (e.g., "ABC123", "1234", "123456789")
+3. Click "Next" button
+4. Observe validation behavior  
+**Expected Result:** Postal code format validation prevents submission, specific format error message displayed  
+**Post-conditions:** Form remains on step 1, postal code format validation error shown  
+**Evidence:** screenshots/code-format.png
+
+### ID: TC-CHK-006
+**Title:** City Field Should Reject Numeric Values  
+**Pre-conditions:** User is on checkout step 1 (Shipping)  
+**Steps:**
+1. Fill all required fields
+2. Enter numeric value in City field (e.g., "12345", "City123")
+3. Click "Next" button
+4. Observe validation behavior  
+**Expected Result:** City field shows validation error for numeric values, form does not proceed to next step  
+**Post-conditions:** Form validation prevents progression, City field shows "City should contain only letters" error  
+**Evidence:**:screenshots/code-format.png
+
+### ID: TC-CHK-007
+**Title:** Country Field Should Reject Numeric Values  
+**Pre-conditions:** User is on checkout step 1 (Shipping)  
+**Steps:**
+1. Fill all required fields
+2. Enter numeric value in Country field (e.g., "123", "Country456")
+3. Click "Next" button
+4. Observe validation behavior  
+**Expected Result:** Country field shows validation error for numeric values, form does not proceed to next step  
+**Post-conditions:** Form validation prevents progression, Country field shows "Country should contain only letters" error  
+**Evidence:**:screenshots/code-format.png
+
+### ID: TC-CHK-008
 **Title:** Review Step - Display Cart Items  
 **Pre-conditions:** User completed shipping step, user is on Review step (step 2)  
 **Steps:**
@@ -211,7 +219,7 @@
 **Post-conditions:** Review step shows all cart items with correct details  
 **Evidence:** screenshots/checkout-review-items.png
 
-### ID: TC-CHK-006
+### ID: TC-CHK-009
 **Title:** Review Step - Back Button  
 **Pre-conditions:** User is on Review step (step 2), shipping form was filled  
 **Steps:**
@@ -222,7 +230,7 @@
 **Post-conditions:** User is back on Shipping step, form data is preserved  
 **Evidence:** screenshots/checkout-review-back.png
 
-### ID: TC-CHK-007
+### ID: TC-CHK-010
 **Title:** Payment Step - Display Payment Info  
 **Pre-conditions:** User is on Payment step (step 3)  
 **Steps:**
@@ -232,7 +240,7 @@
 **Post-conditions:** Payment step displays correctly  
 **Evidence:** screenshots/checkout-payment-step.png
 
-### ID: TC-CHK-008
+### ID: TC-CHK-011
 **Title:** Payment Step - Back Button  
 **Pre-conditions:** User is on Payment step (step 3)  
 **Steps:**
@@ -242,7 +250,7 @@
 **Post-conditions:** User is back on Review step  
 **Evidence:** screenshots/checkout-payment-back.png
 
-### ID: TC-CHK-009
+### ID: TC-CHK-012
 **Title:** Payment Step - Disabled When Cart Empty  
 **Pre-conditions:** Cart is empty  
 **Steps:**
@@ -252,7 +260,7 @@
 **Post-conditions:** Checkout is disabled when cart is empty  
 **Evidence:** screenshots/checkout-disabled-empty-cart.png
 
-### ID: TC-CHK-010
+### ID: TC-CHK-013
 **Title:** Confirmation Step - Success Message  
 **Pre-conditions:** Payment completed successfully, order was created  
 **Steps:**
@@ -263,17 +271,6 @@
 **Post-conditions:** User is redirected to order detail page, order status is "Paid"  
 **Evidence:** screenshots/checkout-confirmation.png
 
-### ID: TC-CHK-011
-**Title:** Form Data Persistence  
-**Pre-conditions:** User fills shipping form, user is on Review step  
-**Steps:**
-1. Fill shipping form with data
-2. Proceed to Review step
-3. Click "Back" to return to Shipping step
-4. Verify form fields still contain data  
-**Expected Result:** All form fields retain their values: fullName, email, address, city, country, postalCode  
-**Post-conditions:** Form data persists when navigating between steps  
-**Evidence:** screenshots/checkout-form-persistence.png
 
 ## 4. Payment Integration (FR-O03)
 
@@ -301,7 +298,7 @@
 **Post-conditions:** Order status is "Paid", gatewayRef is stored, cart is cleared  
 **Evidence:** screenshots/payment-success.png
 
-### ID: TC-PAY-004
+### ID: TC-PAY-003
 **Title:** Order Creation Before Payment  
 **Pre-conditions:** User initiates payment, cart has items  
 **Steps:**
@@ -312,7 +309,7 @@
 **Post-conditions:** Order exists in localStorage before payment completes  
 **Evidence:** screenshots/payment-order-creation.png
 
-### ID: TC-PAY-006
+### ID: TC-PAY-004
 **Title:** Order Status Update on Success  
 **Pre-conditions:** Payment is successful, order exists with status "Pending"  
 **Steps:**
@@ -323,7 +320,7 @@
 **Post-conditions:** Order status is "Paid", gatewayRef is stored  
 **Evidence:** screenshots/payment-status-update.png
 
-### ID: TC-PAY-007
+### ID: TC-PAY-005
 **Title:** Payment Cancellation  
 **Pre-conditions:** Paystack modal is open, user can cancel  
 **Steps:**
@@ -334,7 +331,7 @@
 **Post-conditions:** Order remains "Pending", user can retry payment  
 **Evidence:** screenshots/payment-cancelled.png
 
-### ID: TC-PAY-008
+### ID: TC-PAY-006
 **Title:** Payment Error Handling  
 **Pre-conditions:** Payment fails (simulated or actual failure)  
 **Steps:**
@@ -345,7 +342,7 @@
 **Post-conditions:** Order remains "Pending", error is displayed  
 **Evidence:** screenshots/payment-error.png
 
-### ID: TC-PAY-009
+### ID: TC-PAY-007
 **Title:** Cart Cleared After Successful Payment  
 **Pre-conditions:** Payment is successful, cart has items  
 **Steps:**
@@ -356,7 +353,7 @@
 **Post-conditions:** Cart is empty, cart badge reflects empty state  
 **Evidence:** screenshots/payment-cart-cleared.png
 
-### ID: TC-PAY-010
+### ID: TC-PAY-008
 **Title:** Loading State During Payment  
 **Pre-conditions:** User clicks "Pay Now" button  
 **Steps:**
@@ -414,7 +411,7 @@
 **Post-conditions:** Order totals are displayed correctly  
 **Evidence:** screenshots/order-totals.png
 
-### ID: TC-ORD-006
+### ID: TC-ORD-005
 **Title:** Order Not Found Handling  
 **Pre-conditions:** User navigates to non-existent order ID  
 **Steps:**
@@ -425,7 +422,7 @@
 **Post-conditions:** Error state is displayed with navigation option  
 **Evidence:** screenshots/order-not-found.png
 
-### ID: TC-ORD-007
+### ID: TC-ORD-006
 **Title:** Order Persistence  
 **Pre-conditions:** Order is created, order exists in localStorage  
 **Steps:**
@@ -512,22 +509,19 @@
 
 ## 8. Accessibility Testing
 
-### ID: TC-ACC-001
-- **Title**: Keyboard Navigation
-- **Pre-conditions**: 
-  - Homepage loaded
-  - Keyboard only
-- **Steps**:
-  1. Tab through all elements
-  2. Activate buttons/links
-  3. Fill forms
-- **Expected Result**: 
-  - All elements focusable
-  - Focus visible
-  - Actions triggerable
-- **Post-conditions**: Fully keyboard accessible
+### ID: TC-A11Y-001
+**Title:** Keyboard Navigation  
+**Pre-conditions:** User navigates with keyboard only (no mouse)  
+**Steps:**
+1. Press Tab key to navigate through interactive elements
+2. Verify focus is visible on each element
+3. Verify all elements are reachable
+4. Verify focus order is logical  
+**Expected Result:** All interactive elements are reachable via Tab key, focus is visible (focus ring), focus order is logical, Enter/Space activate elements  
+**Post-conditions:** All functionality is accessible via keyboard  
+**Evidence:** screenshots/a11y-keyboard-nav.png
 
-### ID: TC-ACC-002
+### ID: TC-A11Y-002
 - **Title**: Screen Reader Compatibility
 - **Pre-conditions**: 
   - Screen reader enabled
@@ -541,6 +535,17 @@
   - Images have alt text
   - Actions announced
 - **Post-conditions**: Screen reader friendly
+
+### ID: TC-A11Y-003
+**Title:** Image Alt Text  
+**Pre-conditions:** User is on catalog page, book images are displayed  
+**Steps:**
+1. Inspect book image elements
+2. Verify alt text is present
+3. Verify alt text includes title and author  
+**Expected Result:** All images have alt text attribute, alt text includes book title and author (e.g., "{title} by {author}")  
+**Post-conditions:** Images are accessible to screen readers  
+**Evidence:** screenshots/a11y-image-alt.png
 
 ## 7. Integration & E2E Scenarios
 ### ID: TC-E2E-001
@@ -722,7 +727,7 @@
 **Post-conditions:** Form behavior is consistent with validation rules  
 **Evidence:** screenshots/edge-whitespace-inputs.png
 
-### ID: TC-EDGE-008
+### ID: TC-EDGE-006
 **Title:** Network Failure During Payment  
 **Pre-conditions:** User is on checkout step 3 (Payment), internet connection available  
 **Steps:**
@@ -735,18 +740,6 @@
 **Post-conditions:** Order status unchanged, payment can be retried  
 **Evidence:** screenshots/edge-network-failure-payment.png
 
-
-### ID: TC-EDGE-009
-**Title:** Invalid Order ID Format  
-**Pre-conditions:** User attempts to access order with invalid ID  
-**Steps:**
-1. Navigate to /orders/invalid-format-123
-2. Navigate to /orders/
-3. Navigate to /orders/null
-4. Observe error handling for each  
-**Expected Result:** "We couldn't find this order" message displayed, link to catalog shown, graceful error handling  
-**Post-conditions:** User sees error message, can navigate back to catalog  
-**Evidence:** screenshots/edge-invalid-order-id.png
 
 ## 11. Boundary Value Testing
 
@@ -775,7 +768,7 @@
 **Post-conditions:** Large totals calculated and displayed correctly  
 **Evidence:** screenshots/bound-large-totals.png
 
-### ID: TC-BOUND-004
+### ID: TC-BOUND-003
 **Title:** Very Long Text Inputs (Boundary)  
 **Pre-conditions:** User is on checkout step 1 (Shipping form)  
 **Steps:**
