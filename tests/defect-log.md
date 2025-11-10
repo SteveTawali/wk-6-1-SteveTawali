@@ -1,0 +1,11 @@
+### 🐞 Bug Report (defect log entry)
+- ID: BUG-<area>-<number>
+- Summary: Clear, action-oriented title
+- Severity/Priority: (Critical/Major/Minor) / (High/Medium/Low)
+- Environment: Browser, version; OS/device; network
+- Affected FR(s): e.g., FR-O02
+- Steps to Reproduce: Numbered
+- Expected Result: …
+- Actual Result: …
+- Attachments: Paths to screenshots/videos
+- Notes: Workarounds, scope of impact

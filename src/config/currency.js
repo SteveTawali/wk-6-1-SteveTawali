@@ -4,7 +4,7 @@ export const SUPPORTED_CURRENCIES = ['NGN', 'GHS', 'USD', 'ZAR'];
 
 export const APP_CURRENCY = SUPPORTED_CURRENCIES.includes(ENV_CURRENCY || '')
   ? ENV_CURRENCY
-  : 'ZAR';
+  : 'NGN';
 
 const CURRENCY_LOCALE = {
   NGN: 'en-NG',
