@@ -15,7 +15,7 @@
   - Results update in real-time
 - **Post-conditions**: Search results displayed correctly
 - **Test Data**: Use existing book titles from books.js
-- **Evidence:** : screenshots/search-book.png
+- **Evidence:** [screenshots/search-book.png](screenshots/search-book.png)
 
 ### ID: TC-CART-001
 - **Title**: Add Book to Cart
@@ -31,7 +31,7 @@
   - Cart counter increments
   - Book visible in cart with correct price
 - **Post-conditions**: Book present in cart
-- **Evidence:** screenshots/cart-add-book.png
+- **Evidence:** [screenshots/cart-add-book.png](screenshots/cart-add-book.png)
 
 ### ID: TC-CART-002
 **Title:** Update Cart Quantity  
@@ -42,7 +42,7 @@
 3. Observe the subtotal calculation  
 **Expected Result:** Quantity input shows updated value, line item price = book.price × quantity, subtotal recalculates correctly, cannot set quantity below 1  
 **Post-conditions:** Cart item quantity is updated, subtotal updated, localStorage app.cart updated  
-**Evidence:** screenshots/cart-update-quantity.png
+**Evidence:** [screenshots/cart-update-quantity.png](screenshots/cart-update-quantity.png)
 
 ### ID: TC-CART-003
 - **Title**: Remove Book from Cart
@@ -57,7 +57,7 @@
   - Subtotal updates
   - Empty cart message if last item
 - **Post-conditions**: Book removed from cart
-- **Evidence:**: screenshots/remove-book.png
+- **Evidence:** [screenshots/remove-book.png](screenshots/remove-book.png)
 
 ### ID: TC-CART-004
 **Title:** Quantity Cannot Be Less Than 1  
@@ -69,7 +69,7 @@
 4. Observe the quantity value  
 **Expected Result:** Quantity input enforces minimum value of 1, cannot be set to 0 or negative  
 **Post-conditions:** Quantity remains at minimum 1  
-**Evidence:** screenshots/cart-quantity-minimum.png
+**Evidence:** [screenshots/cart-quantity-minimum.png](screenshots/cart-quantity-minimum.png)
 
 ### ID: TC-CART-005
 **Title:** Calculate Subtotal Correctly  
@@ -80,7 +80,7 @@
 3. Verify subtotal calculation: sum(price × quantity) for all items  
 **Expected Result:** Subtotal displays correct sum: (book1.price × 2) + (book2.price × 3), formatted with currency symbol  
 **Post-conditions:** Subtotal is correctly calculated and displayed  
-**Evidence:** screenshots/cart-subtotal-calculation.png
+**Evidence:** [screenshots/cart-subtotal-calculation.png](screenshots/cart-subtotal-calculation.png)
 
 ### ID: TC-CART-006
 **Title:** Empty Cart State  
@@ -91,7 +91,7 @@
 3. Verify "Continue shopping" link is present  
 **Expected Result:** Text "Your cart is empty" is displayed, link text "Continue shopping" is present, link navigates to /catalog  
 **Post-conditions:** Empty cart state is displayed  
-**Evidence:** screenshots/cart-empty-state.png
+**Evidence:** [screenshots/cart-empty-state.png](screenshots/cart-empty-state.png)
 
 ### ID: TC-CART-007
 **Title:** Cart Persistence Across Refresh  
@@ -103,7 +103,7 @@
 4. Verify items are still present  
 **Expected Result:** Cart items persist after refresh  
 **Post-conditions:** Cart data is persisted in localStorage, cart survives page refresh  
-**Evidence:** screenshots/cart-persistence.png
+**Evidence:** [screenshots/cart-persistence.png](screenshots/cart-persistence.png)
 
 ### ID: TC-CART-008
 **Title:** Cart Count Badge Updates  
@@ -114,7 +114,7 @@
 3. Verify badge shows correct count  
 **Expected Result:** Cart badge shows total item count (sum of all quantities), count updates immediately  
 **Post-conditions:** Cart badge reflects accurate count, screen reader announces update  
-**Evidence:** screenshots/cart-badge-update.png
+**Evidence:** [screenshots/cart-badge-update.png](screenshots/cart-badge-update.png)
 
 ### ID: TC-CART-009
 **Title:** Proceed to Checkout Button  
@@ -125,7 +125,7 @@
 3. User is directed to checkout page  
 **Expected Result:** Checkout page loads  
 **Post-conditions:** User is on checkout page  
-**Evidence:** screenshots/cart-proceed-checkout.png
+**Evidence:** [screenshots/cart-proceed-checkout.png](screenshots/cart-proceed-checkout.png)
 
 ## 3. Checkout Wizard (FR-O02)
 
@@ -138,7 +138,7 @@
 3. Verify step labels and active step highlighting  
 **Expected Result:** Step indicators show: "Shipping", "Review", "Payment", "Confirmation", first step "Shipping" is highlighted/bold  
 **Post-conditions:** Checkout wizard displays with 4 steps, first step is active  
-**Evidence:** screenshots/checkout-steps.png
+**Evidence:** [screenshots/checkout-steps.png](screenshots/checkout-steps.png)
 
 ### ID: TC-CHK-002
 **Title:** Shipping Form - All Fields Required  
@@ -148,7 +148,7 @@
 2. Observe error message  
 **Expected Result:** Error message displayed: "Please fill out all required fields", form does not proceed to next step  
 **Post-conditions:** Form validation prevents progression, error message is visible  
-**Evidence:** screenshots/checkout-validation-error.png
+**Evidence:** [screenshots/checkout-validation-error.png](screenshots/checkout-validation-error.png)
 
 ### ID: TC-CHK-003
 **Title:** Shipping Form - Email Validation  
@@ -159,7 +159,7 @@
 3. Try to submit form  
 **Expected Result:** Email validation prevents submission, email field shows validation error, form does not proceed  
 **Post-conditions:** Email validation works, invalid email is rejected  
-**Evidence:** screenshots/checkout-email-validation.png
+**Evidence:** [screenshots/checkout-email-validation.png](screenshots/checkout-email-validation.png)
 
 ### ID: TC-CHK-004
 **Title:** Shipping Form - Valid Submission  
@@ -170,7 +170,7 @@
 3. Observe step change  
 **Expected Result:** Form submits successfully, URL remains /checkout, step indicator shows "Review" as active, form data is preserved  
 **Post-conditions:** User is on Review step (step 2), shipping data is stored in component state  
-**Evidence:** screenshots/checkout-shipping-submit.png
+**Evidence:** [screenshots/checkout-shipping-submit.png](screenshots/checkout-shipping-submit.png)
 
 ### ID: TC-CHK-005
 **Title:** Shipping Form - Postal Code Format Validation  
@@ -182,7 +182,7 @@
 4. Observe validation behavior  
 **Expected Result:** Postal code format validation prevents submission, specific format error message displayed  
 **Post-conditions:** Form remains on step 1, postal code format validation error shown  
-**Evidence:** screenshots/code-format.png
+**Evidence:** [screenshots/code-format.png](screenshots/code-format.png)
 
 ### ID: TC-CHK-006
 **Title:** City Field Should Reject Numeric Values  
@@ -194,7 +194,7 @@
 4. Observe validation behavior  
 **Expected Result:** City field shows validation error for numeric values, form does not proceed to next step  
 **Post-conditions:** Form validation prevents progression, City field shows "City should contain only letters" error  
-**Evidence:**:screenshots/code-format.png
+**Evidence:** [screenshots/code-format.png](screenshots/code-format.png)
 
 ### ID: TC-CHK-007
 **Title:** Country Field Should Reject Numeric Values  
@@ -206,7 +206,7 @@
 4. Observe validation behavior  
 **Expected Result:** Country field shows validation error for numeric values, form does not proceed to next step  
 **Post-conditions:** Form validation prevents progression, Country field shows "Country should contain only letters" error  
-**Evidence:**:screenshots/code-format.png
+**Evidence:** [screenshots/code-format.png](screenshots/code-format.png)
 
 ### ID: TC-CHK-008
 **Title:** Review Step - Display Cart Items  
@@ -217,7 +217,7 @@
 3. Verify prices are displayed correctly  
 **Expected Result:** All cart items are displayed with: book title, quantity (e.g., "Qty 2"), line item price (book.price × quantity), formatted currency  
 **Post-conditions:** Review step shows all cart items with correct details  
-**Evidence:** screenshots/checkout-review-items.png
+**Evidence:** [screenshots/checkout-review-items.png](screenshots/checkout-review-items.png)
 
 ### ID: TC-CHK-009
 **Title:** Review Step - Back Button  
@@ -228,7 +228,7 @@
 3. Verify form data is still present  
 **Expected Result:** Step indicator shows "Shipping" as active, all form fields retain their values  
 **Post-conditions:** User is back on Shipping step, form data is preserved  
-**Evidence:** screenshots/checkout-review-back.png
+**Evidence:** [screenshots/checkout-review-back.png](screenshots/checkout-review-back.png)
 
 ### ID: TC-CHK-010
 **Title:** Payment Step - Display Payment Info  
@@ -238,7 +238,7 @@
 2. Verify "Pay Now" button is present  
 **Expected Result:** Text "You will be redirected to complete your payment securely" is displayed, "Pay Now" button is visible and enabled  
 **Post-conditions:** Payment step displays correctly  
-**Evidence:** screenshots/checkout-payment-step.png
+**Evidence:** [screenshots/checkout-payment-step.png](screenshots/checkout-payment-step.png)
 
 ### ID: TC-CHK-011
 **Title:** Payment Step - Back Button  
@@ -248,7 +248,7 @@
 2. Observe step change  
 **Expected Result:** Step indicator shows "Review" as active, user returns to Review step, URL remains /checkout  
 **Post-conditions:** User is back on Review step  
-**Evidence:** screenshots/checkout-payment-back.png
+**Evidence:** [screenshots/checkout-payment-back.png](screenshots/checkout-payment-back.png)
 
 ### ID: TC-CHK-012
 **Title:** Payment Step - Disabled When Cart Empty  
@@ -258,7 +258,7 @@
 2. Verify "Next" button state  
 **Expected Result:** "Next" button is disabled, cart empty state prevents checkout  
 **Post-conditions:** Checkout is disabled when cart is empty  
-**Evidence:** screenshots/checkout-disabled-empty-cart.png
+**Evidence:** [screenshots/checkout-disabled-empty-cart.png](screenshots/checkout-disabled-empty-cart.png)
 
 ### ID: TC-CHK-013
 **Title:** Confirmation Step - Success Message  
@@ -269,7 +269,7 @@
 3. Wait for redirect  
 **Expected Result:** Text "Payment successful" is displayed, text "Preparing your confirmation… Redirecting to order details" is shown  
 **Post-conditions:** User is redirected to order detail page, order status is "Paid"  
-**Evidence:** screenshots/checkout-confirmation.png
+**Evidence:** [screenshots/checkout-confirmation.png](screenshots/checkout-confirmation.png)
 
 
 ## 4. Payment Integration (FR-O03)
@@ -283,7 +283,7 @@
 3. Verify payment form is displayed  
 **Expected Result:** Paystack payment interface opens (popup or iframe), payment form is visible  
 **Post-conditions:** Paystack payment modal is open, order is created with status "Pending"  
-**Evidence:** screenshots/payment-paystack-init.png
+**Evidence:** [screenshots/payment-paystack-init.png](screenshots/payment-paystack-init.png)
 
 ### ID: TC-PAY-002
 **Title:** Payment with Valid Test Card  
@@ -296,7 +296,7 @@
 5. Verify order status update  
 **Expected Result:** Payment succeeds, order status changes to "Paid", user is redirected to confirmation step  
 **Post-conditions:** Order status is "Paid", gatewayRef is stored, cart is cleared  
-**Evidence:** screenshots/payment-success.png
+**Evidence:** [screenshots/payment-success.png](screenshots/payment-success.png)
 
 ### ID: TC-PAY-003
 **Title:** Order Creation Before Payment  
@@ -307,7 +307,7 @@
 3. Verify order is created  
 **Expected Result:** Order is created with status "Pending", order is saved to localStorage app.orders, order contains: id, status, items, shipping, totals, createdAt  
 **Post-conditions:** Order exists in localStorage before payment completes  
-**Evidence:** screenshots/payment-order-creation.png
+**Evidence:** [screenshots/payment-order-creation.png](screenshots/payment-order-creation.png)
 
 ### ID: TC-PAY-004
 **Title:** Order Status Update on Success  
@@ -318,7 +318,7 @@
 3. Verify gateway reference  
 **Expected Result:** Order status changes to "Paid" in localStorage, gatewayRef field is added to order object, order is updated in app.orders  
 **Post-conditions:** Order status is "Paid", gatewayRef is stored  
-**Evidence:** screenshots/payment-status-update.png
+**Evidence:** [screenshots/payment-status-update.png](screenshots/payment-status-update.png)
 
 ### ID: TC-PAY-005
 **Title:** Payment Cancellation  
@@ -329,7 +329,7 @@
 3. Check order status  
 **Expected Result:** Error message displayed: "Payment was cancelled. You can retry.", order status remains "Pending" in localStorage  
 **Post-conditions:** Order remains "Pending", user can retry payment  
-**Evidence:** screenshots/payment-cancelled.png
+**Evidence:** [screenshots/payment-cancelled.png](screenshots/payment-cancelled.png)
 
 ### ID: TC-PAY-006
 **Title:** Payment Error Handling  
@@ -340,7 +340,7 @@
 3. Check order status  
 **Expected Result:** Error message displayed: "Payment failed to start. Please try again.", order status remains "Pending"  
 **Post-conditions:** Order remains "Pending", error is displayed  
-**Evidence:** screenshots/payment-error.png
+**Evidence:** [screenshots/payment-error.png](screenshots/payment-error.png)
 
 ### ID: TC-PAY-007
 **Title:** Cart Cleared After Successful Payment  
@@ -351,7 +351,7 @@
 3. Verify navbar cart badge  
 **Expected Result:** cart badge shows count "0", cart is cleared  
 **Post-conditions:** Cart is empty, cart badge reflects empty state  
-**Evidence:** screenshots/payment-cart-cleared.png
+**Evidence:** [screenshots/payment-cart-cleared.png](screenshots/payment-cart-cleared.png)
 
 ### ID: TC-PAY-008
 **Title:** Loading State During Payment  
@@ -362,7 +362,7 @@
 3. Verify button is disabled  
 **Expected Result:** Button text changes to "Processing…", button is not clickable during processing  
 **Post-conditions:** Button shows loading state, payment is processing  
-**Evidence:** screenshots/payment-loading.png
+**Evidence:** [screenshots/payment-loading.png](screenshots/payment-loading.png)
 
 ## 5. Order Management (FR-O04, FR-O05)
 
@@ -374,7 +374,7 @@
 2. Verify order details are displayed  
 **Expected Result:** URL is /orders/{orderId}, order information is displayed: order ID, status, items, totals, shipping info  
 **Post-conditions:** Order detail page is displayed  
-**Evidence:** screenshots/order-detail-page.png
+**Evidence:** [screenshots/order-detail-page.png](screenshots/order-detail-page.png)
 
 ### ID: TC-ORD-002
 **Title:** Order Status Display  
@@ -385,7 +385,7 @@
 3. Verify current status is highlighted  
 **Expected Result:** Status timeline shows: "Pending", "Paid", "Fulfilled", "Delivered", current status "Paid" is highlighted (green/bold)  
 **Post-conditions:** Status timeline displays correctly with active status highlighted  
-**Evidence:** screenshots/order-status-timeline.png
+**Evidence:** [screenshots/order-status-timeline.png](screenshots/order-status-timeline.png)
 
 ### ID: TC-ORD-003
 **Title:** Order Items Display  
@@ -397,7 +397,7 @@
 4. Verify images are displayed  
 **Expected Result:** All order items are displayed with: book image (alt text includes title and author), book title, quantity (e.g., "Qty 2"), line item price (formatted currency)  
 **Post-conditions:** All order items are displayed with correct details  
-**Evidence:** screenshots/order-items.png
+**Evidence:** [screenshots/order-items.png](screenshots/order-items.png)
 
 ### ID: TC-ORD-004
 **Title:** Order Totals Display  
@@ -409,7 +409,7 @@
 4. Verify total is displayed  
 **Expected Result:** All totals are displayed: Subtotal, Shipping, Tax, Total, all values match checkout totals, formatted with currency symbol  
 **Post-conditions:** Order totals are displayed correctly  
-**Evidence:** screenshots/order-totals.png
+**Evidence:** [screenshots/order-totals.png](screenshots/order-totals.png)
 
 ### ID: TC-ORD-005
 **Title:** Order Not Found Handling  
@@ -420,7 +420,7 @@
 3. Verify link to catalog  
 **Expected Result:** Text "We couldn't find this order" is displayed, link text "Go back to catalog" is present, link navigates to /catalog  
 **Post-conditions:** Error state is displayed with navigation option  
-**Evidence:** screenshots/order-not-found.png
+**Evidence:** [screenshots/order-not-found.png](screenshots/order-not-found.png)
 
 ### ID: TC-ORD-006
 **Title:** Order Persistence  
@@ -432,7 +432,7 @@
 4. Verify order is still present  
 **Expected Result:** Order persists after refresh, localStorage app.orders contains order data, order detail page displays correctly  
 **Post-conditions:** Order data is persisted in localStorage, order survives page refresh  
-**Evidence:** screenshots/order-persistence.png
+**Evidence:** [screenshots/order-persistence.png](screenshots/order-persistence.png)
 
 ## 6. Navbar & Search
 
@@ -445,7 +445,7 @@
 3. Verify placeholder text  
 **Expected Result:** Search input is visible, placeholder text "Search books…" is displayed, input is accessible  
 **Post-conditions:** Search input is available in navbar  
-**Evidence:** screenshots/navbar-search-input.png
+**Evidence:** [screenshots/navbar-search-input.png](screenshots/navbar-search-input.png)
 
 ### ID: TC-NAV-002
 **Title:** Navbar Search  
@@ -454,7 +454,7 @@
 1. Enter text in search field
 2. Press Enter key  
 **Expected Result:** Search functionality works on catalog page  
-**Evidence:** screenshots/navbar-enter-navigate.png
+**Evidence:** [screenshots/navbar-enter-navigate.png](screenshots/navbar-enter-navigate.png)
 
 ### ID: TC-NAV-003
 **Title:** Search Clears on Route Change  
@@ -466,7 +466,7 @@
 4. Verify search is cleared  
 **Expected Result:** Search input is cleared when route changes, search state resets on navigation  
 **Post-conditions:** Search is cleared on route change  
-**Evidence:** screenshots/navbar-search-clear-route.png
+**Evidence:** [screenshots/navbar-search-clear-route.png](screenshots/navbar-search-clear-route.png)
 
 ## 7. Performance Testing
 
@@ -481,7 +481,7 @@
   5. Measure image load times 
 - **Expected Result**: Images load lazily (loading="lazy" attribute), images load as user scrolls, no layout shift (CLS), images have explicit dimensions
 - **Post-conditions**: Images optimized and lazy-loaded
-- **Evidence**: screenshots/perf-image-loading.png
+- **Evidence**: [screenshots/perf-image-loading.png](screenshots/perf-image-loading.png)
 
 ### ID: TC-PERF-002
 - **Title**: Network Throttling - Slow 3G
@@ -494,7 +494,7 @@
   5. Observe user experience 
 - **Expected Result**: App remains functional on slow network, loading states shown, user can complete actions, acceptable performance degradation
 - **Post-conditions**: App works on slow networks
-- **Evidence**: screenshots/perf-slow-3g.png
+- **Evidence**: [screenshots/perf-slow-3g.png](screenshots/perf-slow-3g.png)
 
 ### ID: TC-PERF-003
 - **Title**: Network Throttling - Fast 3G
@@ -505,7 +505,7 @@
   3. Measure performance metrics 
 - **Expected Result**: All pages load quickly, checkout flow smooth, performance acceptable on Fast 3G
 - **Post-conditions**: App performs well on Fast 3G
-- **Evidence**: screenshots/perf-fast-3g.png
+- **Evidence**: [screenshots/perf-fast-3g.png](screenshots/perf-fast-3g.png)
 
 ## 8. Accessibility Testing
 
@@ -519,7 +519,7 @@
 4. Verify focus order is logical  
 **Expected Result:** All interactive elements are reachable via Tab key, focus is visible (focus ring), focus order is logical, Enter/Space activate elements  
 **Post-conditions:** All functionality is accessible via keyboard  
-**Evidence:** screenshots/a11y-keyboard-nav.png
+**Evidence:** [screenshots/a11y-keyboard-nav.png](screenshots/a11y-keyboard-nav.png)
 
 ### ID: TC-A11Y-002
 - **Title**: Screen Reader Compatibility
@@ -545,7 +545,7 @@
 3. Verify alt text includes title and author  
 **Expected Result:** All images have alt text attribute, alt text includes book title and author (e.g., "{title} by {author}")  
 **Post-conditions:** Images are accessible to screen readers  
-**Evidence:** screenshots/a11y-image-alt.png
+**Evidence:** [screenshots/a11y-image-alt.png](screenshots/a11y-image-alt.png)
 
 ## 7. Integration & E2E Scenarios
 ### ID: TC-E2E-001
@@ -565,7 +565,7 @@
   11. Verify order status is "Paid" 
 - **Expected Result**: Complete flow works end-to-end, all steps complete successfully, order created and paid, cart cleared, navigation smooth
 - **Post-conditions**: Order created with status "Paid", cart empty, user on order details page
-- **Evidence**: screenshots/e2e-complete-purchase-flow.png
+- **Evidence**: [screenshots/e2e-complete-purchase-flow.png](screenshots/e2e-complete-purchase-flow.png)
 
 ### ID: TC-E2E-002
 - **Title**: Multiple Simultaneous Operations
@@ -578,7 +578,7 @@
   5. Verify cart state is consistent 
 - **Expected Result**: Cart state synchronized via localStorage, both tabs show same cart state after refresh, last write wins or state merges correctly
 - **Post-conditions**: Cart state consistent across tabs
-- **Evidence**: screenshots/e2e-multiple-tabs.png
+- **Evidence**: [screenshots/e2e-multiple-tabs.png](screenshots/e2e-multiple-tabs.png)
 
 ### ID: TC-E2E-003
 - **Title**: State Persistence Across Browser Sessions
@@ -591,7 +591,7 @@
   5. Verify cart and orders persist 
 - **Expected Result**: Cart items still present, orders still accessible, localStorage data persisted across sessions
 - **Post-conditions**: All state persisted and restored correctly
-- **Evidence**: screenshots/e2e-session-persistence.png
+- **Evidence**: [screenshots/e2e-session-persistence.png](screenshots/e2e-session-persistence.png)
 
 ## 9. Cross-Browser Test Cases
 
@@ -605,7 +605,7 @@
   4. Check console for errors 
 - **Expected Result**: All features work correctly in Chrome, no console errors, layout correct, functionality intact
 - **Post-conditions**: App fully functional in Chrome
-- **Evidence**: screenshots/browser-chrome.png
+- **Evidence**: [screenshots/browser-chrome.png](screenshots/browser-chrome.png)
 
 ### ID: TC-BROWSER-002
 - **Title**: Firefox Compatibility
@@ -617,7 +617,7 @@
   4. Check console for errors 
 - **Expected Result**: All features work correctly in Firefox, no compatibility issues, layout correct
 - **Post-conditions**: App fully functional in Firefox
-- **Evidence**: screenshots/browser-firefox.png
+- **Evidence**: [screenshots/browser-firefox.png](screenshots/browser-firefox.png)
 
 ### ID: TC-BROWSER-003
 - **Title**: Safari Compatibility
@@ -629,7 +629,7 @@
   4. Check for Safari-specific issues 
 - **Expected Result**: All features work correctly in Safari, no Safari-specific bugs, layout correct
 - **Post-conditions**: App fully functional in Safari
-- **Evidence**: screenshots/browser-safari.png
+- **Evidence**: [screenshots/browser-safari.png](screenshots/browser-safari.png)
 
 ### ID: TC-BROWSER-004
 - **Title**: Edge Compatibility
@@ -640,7 +640,7 @@
   3. Verify layout and functionality
 - **Expected Result**: All features work correctly in Edge, no compatibility issues
 - **Post-conditions**: App fully functional in Edge
-- **Evidence**: screenshots/browser-edge.png
+- **Evidence**: [screenshots/browser-edge.png](screenshots/browser-edge.png)
 
 ## 10. Device Test Cases
 
@@ -655,7 +655,7 @@
   5. Verify text is readable 
 - **Expected Result**: Layout adapts to mobile, all features accessible, text readable, touch targets adequate size, responsive design works
 - **Post-conditions**: App fully functional on mobile viewport
-- **Evidence**: screenshots/device-mobile-iphone.png
+- **Evidence**: [screenshots/device-mobile-iphone.png](screenshots/device-mobile-iphone.png)
 
 ### ID: TC-DEVICE-002
 - **Title**: Tablet Responsiveness - iPad (768×1024)
@@ -667,7 +667,7 @@
   4. Verify layout is appropriate for tablet 
 - **Expected Result**: Layout optimized for tablet, all features work, appropriate spacing and sizing
 - **Post-conditions**: App fully functional on tablet viewport
-- **Evidence**: screenshots/device-tablet-ipad.png
+- **Evidence**: [screenshots/device-tablet-ipad.png](screenshots/device-tablet-ipad.png)
 
 ## 12. Edge Cases & Error Scenarios
 
@@ -681,7 +681,7 @@
 4. Observe button states and error messages  
 **Expected Result:** All "Next" buttons are disabled, checkout cannot proceed, user sees appropriate message or empty state  
 **Post-conditions:** User remains on checkout page, cannot proceed without items  
-**Evidence:** screenshots/edge-empty-cart-checkout.png
+**Evidence:** [screenshots/edge-empty-cart-checkout.png](screenshots/edge-empty-cart-checkout.png)
 
 ### ID: TC-EDGE-002
 **Title:** Invalid Email Format - Missing @ Symbol  
@@ -692,7 +692,7 @@
 3. Observe validation behavior  
 **Expected Result:** Browser shows validation error, form does not submit  
 **Post-conditions:** Form remains on step 1, error message displayed  
-**Evidence:** screenshots/edge-invalid-email-no-at.png
+**Evidence:** [screenshots/edge-invalid-email-no-at.png](screenshots/edge-invalid-email-no-at.png)
 
 ### ID: TC-EDGE-003
 **Title:** Very Long Input Strings  
@@ -704,7 +704,7 @@
 4. Observe form behavior and UI layout  
 **Expected Result:** Form accepts long inputs, UI does not break, text may wrap or truncate appropriately, form can be submitted  
 **Post-conditions:** Long text is stored in order data  
-**Evidence:** screenshots/edge-long-inputs.png
+**Evidence:** [screenshots/edge-long-inputs.png](screenshots/edge-long-inputs.png)
 
 ### ID: TC-EDGE-004
 **Title:** Special Characters in Search  
@@ -713,7 +713,7 @@
 1. Enter search query with special characters: ""
 2. Observe search behavior and results  
 **Expected Result:** Search may return no results or handle gracefully  
-**Evidence:** screenshots/edge-special-chars-search.png
+**Evidence:** [screenshots/edge-special-chars-search.png](screenshots/edge-special-chars-search.png)
 
 ### ID: TC-EDGE-005
 **Title:** Whitespace-Only Inputs in Forms  
@@ -725,7 +725,7 @@
 4. Observe validation behavior  
 **Expected Result:** Form validation may pass (spaces are characters) or fail appropriately, order creation handles whitespace correctly  
 **Post-conditions:** Form behavior is consistent with validation rules  
-**Evidence:** screenshots/edge-whitespace-inputs.png
+**Evidence:** [screenshots/edge-whitespace-inputs.png](screenshots/edge-whitespace-inputs.png)
 
 ### ID: TC-EDGE-006
 **Title:** Network Failure During Payment  
@@ -738,7 +738,7 @@
 5. Attempt payment again  
 **Expected Result:** Error message displayed: "Payment failed to start. Please try again.", order remains "Pending", user can retry payment  
 **Post-conditions:** Order status unchanged, payment can be retried  
-**Evidence:** screenshots/edge-network-failure-payment.png
+**Evidence:** [screenshots/edge-network-failure-payment.png](screenshots/edge-network-failure-payment.png)
 
 
 ## 11. Boundary Value Testing
@@ -753,7 +753,7 @@
 4. Verify subtotal calculation  
 **Expected Result:** Quantity accepted, subtotal calculated correctly (price × 999999), UI displays correctly, no overflow errors  
 **Post-conditions:** Large quantity stored and calculated correctly  
-**Evidence:** screenshots/bound-max-quantity.png
+**Evidence:** [screenshots/bound-max-quantity.png](screenshots/bound-max-quantity.png)
 
 ### ID: TC-BOUND-002
 **Title:** Very Large Cart Totals  
@@ -766,7 +766,7 @@
 5. Verify totals calculation (subtotal + shipping + tax)  
 **Expected Result:** All totals calculated correctly, no rounding errors, currency formatting correct, totals display properly  
 **Post-conditions:** Large totals calculated and displayed correctly  
-**Evidence:** screenshots/bound-large-totals.png
+**Evidence:** [screenshots/bound-large-totals.png](screenshots/bound-large-totals.png)
 
 ### ID: TC-BOUND-003
 **Title:** Very Long Text Inputs (Boundary)  
@@ -778,4 +778,4 @@
 4. Verify data is stored correctly  
 **Expected Result:** Long text accepted and stored, order created successfully, order details display long text correctly  
 **Post-conditions:** Long text persisted in order data  
-**Evidence:** screenshots/bound-very-long-inputs.png
+**Evidence:** [screenshots/bound-very-long-inputs.png](screenshots/bound-very-long-inputs.png)
