@@ -7,8 +7,8 @@
 | Step | Action | Expected Result | Actual Result | Screenshot | Status |
 |------|--------|-----------------|----------------|------------|--------|
 | 1 | Click on search input field | Search input field is focused | | | |
-| 2 | Type a known book title/description/author | Matching books are displayed | | | |
-| 3 | Wait for results to load | Search is case-insensitive, results update in real-time | | | |
+| 2 | Type a known book title/description/author | Matching books are displayed 
+| 3 | Wait for results to load | Search is case-insensitive, results update in real-time 
 
 ### ID: TC-CART-001
 **Title:** Add Book to Cart
