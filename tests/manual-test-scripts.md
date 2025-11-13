@@ -6,7 +6,7 @@
 **Title:** Search Books by Title
 | Step | Action | Expected Result | Actual Result | Screenshot | Status |
 |------|--------|-----------------|----------------|------------|--------|
-| 1 | Click on search input field | Search input field is focused | | | |
+| 1 | Click on search input field | Search input field is focused | | |Pass |
 | 2 | Type a known book title/description/author | Matching books are displayed 
 | 3 | Wait for results to load | Search is case-insensitive, results update in real-time 
 
