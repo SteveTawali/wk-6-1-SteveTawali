@@ -32,7 +32,7 @@
 
 ## Coverage Gaps Analysis
 
-### 🔴 Not Covered Requirements
+###  Not Covered Requirements
 | FR Code | Requirement | Impact | Priority |
 |---------|-------------|--------|----------|
 | **FR-R01** | Returns — 7-day window validation from delivery date | High | P2 |
@@ -48,11 +48,11 @@
 | **FR-M05** | Promotions — Manage promo banners and coupons | Low | P3 |
 | **FR-N01** | Notifications — Unread count badge; in-app list; history | Medium | P2 |
 | **FR-N02** | Mark all read — Batch mark; badge updates to 0 | Low | P3 |
-| **FR-S01** | Sanitization — Block scripts and `javascript:`; allow safe markdown | ⚠️ **Partial** | P2 |
+| **FR-S01** | Sanitization — Block scripts and `javascript:`; allow safe markdown | **Partial** | P2 |
 | **FR-S02** | URL scheme validation — Reject non-http(s) links in UGC | High | P2 |
 | **FR-S03** | Storage errors — Gracefully handle quota exceeded and JSON parse failures | Medium | P2 |
 
-### ⚠️ Partially Covered Requirements
+###  Partially Covered Requirements
 | FR Code | Requirement | Current Coverage | Missing Tests |
 |---------|-------------|------------------|---------------|
 | **FR-O05** | Order lifecycle transitions | 2/6 scenarios | Fulfilled→Delivered, Cancelled, Refunded status transitions |
@@ -62,12 +62,12 @@
 
 | Risk Level | Area | Test Coverage | Status |
 |------------|------|---------------|--------|
-| **🔴 Critical** | Payment Processing | 8 tests |  Well Covered |
-| **🔴 Critical** | Cart Operations | 9 tests |  Well Covered |
-| **🟡 High** | Checkout Flow | 13 tests |  Well Covered |
-| **🟡 High** | Order Management | 6 tests |  Partial |
-| **🟡 High** | Data Persistence | 5 tests |  Good |
-| **🟢 Medium** | Performance/A11Y | 6 tests |  Adequate |
-| **🟢 Medium** | Compatibility | 6 tests |  Adequate |
+| ** Critical** | Payment Processing | 8 tests |  Well Covered |
+| ** Critical** | Cart Operations | 9 tests |  Well Covered |
+| ** High** | Checkout Flow | 13 tests |  Well Covered |
+| ** High** | Order Management | 6 tests |  Partial |
+| ** High** | Data Persistence | 5 tests |  Good |
+| ** Medium** | Performance/A11Y | 6 tests |  Adequate |
+| ** Medium** | Compatibility | 6 tests |  Adequate |
 
 *Traceability Matrix Summary: 69 existing tests provide excellent coverage for core functionality with identified gaps in admin features, reviews, returns, and advanced security.*
