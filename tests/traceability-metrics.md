@@ -1,9 +1,9 @@
 # Traceability Matrix
 
-*Project Name: BookStore QA PROJECT*
-*Created: ${13/11/2025}*  
+*Project Name: BookStore QA PROJECT*  
+
 *Version: 1.0*  
-*Last Updated: ${13/11/2025}*
+
 
 ## Requirements Coverage Matrix
 
@@ -13,7 +13,7 @@
 | **FR-O02** | Checkout wizard — Shipping → Review → Payment → Confirmation with validation and navigation | TC-CHK-001, TC-CHK-002, TC-CHK-003, TC-CHK-004, TC-CHK-005, TC-CHK-006, TC-CHK-007, TC-CHK-008, TC-CHK-009, TC-CHK-010, TC-CHK-011, TC-CHK-012, TC-CHK-013 |  **100% Covered** | 13 |
 | **FR-O03** | Payments — Paystack init with configured currency; exact cents; success/cancel/error handling; verify updates order to Paid | TC-PAY-001, TC-PAY-002, TC-PAY-003, TC-PAY-004, TC-PAY-005, TC-PAY-006, TC-PAY-007, TC-PAY-008 |  **100% Covered** | 8 |
 | **FR-O04** | Orders — Order history/list; order details with status timeline; CSV export | TC-ORD-001, TC-ORD-002, TC-ORD-003, TC-ORD-004, TC-ORD-005, TC-ORD-006 |  **100% Covered** | 6 |
-| **FR-O05** | Order lifecycle — Status transitions Pending→Paid→Fulfilled→Delivered; Cancelled/Refunded with audit trail | TC-ORD-002, TC-ORD-006 | ⚠️ **33% Covered** | 2 |
+| **FR-O05** | Order lifecycle — Status transitions Pending→Paid→Fulfilled→Delivered; Cancelled/Refunded with audit trail | TC-ORD-002, TC-ORD-006 |  **33% Covered** | 2 |
 | **Catalog** | Search and discovery functionality | TC-CAT-000, TC-NAV-001, TC-NAV-002, TC-NAV-003 |  **100% Covered** | 4 |
 | **FR-X01** | Accessibility — Labels, focus, aria-live; keyboard nav coverage | TC-A11Y-001, TC-A11Y-002, TC-A11Y-003 |  **100% Covered** | 3 |
 | **FR-X02** | Performance — LCP/TTI budgets met; lazy images; stable layout | TC-PERF-001, TC-PERF-002, TC-PERF-003 |  **100% Covered** | 3 |
