@@ -6,7 +6,7 @@
 **Title:** Search Books by Title
 | Step | Action | Expected Result | Actual Result | Screenshot | Status |
 |------|--------|-----------------|----------------|------------|--------|
-| 1 | Click on search input field | Search input field is focused | | |Pass |
+| 1 | Click on search input field | Search input field is focused |Cursor appears in the search box ready for typing,as the user types books with matching author,description or title is displayed in the,search updates instantly when characters are being typed regardless of the case list | |Pass |
 | 2 | Type a known book title/description/author | Matching books are displayed 
 | 3 | Wait for results to load | Search is case-insensitive, results update in real-time 
 
