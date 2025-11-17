@@ -1,3 +1,17 @@
+# Test Scripts
+
+## 📊 All test scripts have been moved to Google Sheets for better collaboration
+
+### [**→ OPEN TEST SCRIPTS IN GOOGLE SHEETS ←**](https://docs.google.com/spreadsheets/d/1HVTzzAeCkWOl7JnKip2kckogLFJ5EpZ_gWgSmEW5EL4/edit?usp=sharing)
+
+## What's in the Sheet:
+- **69 test cases** across 4 phases
+- **Real-time execution status**
+- **Team collaboration**
+- **Automatic version history**
+
+> **Note:** This markdown file is kept for reference and version control. For active testing and collaboration, please use the Google Sheets link above. The Google Sheets version is the source of truth for test execution.
+
 # Phase 1: Early Manual Test Scripts (Priority 1)
 
 ## 1. Core Book Catalog & Cart
