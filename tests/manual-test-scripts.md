@@ -11,7 +11,7 @@
 ### [**→ OPEN TEST SCRIPTS IN GOOGLE SHEETS ←**](https://docs.google.com/spreadsheets/d/1HVTzzAeCkWOl7JnKip2kckogLFJ5EpZ_gWgSmEW5EL4/edit?usp=sharing)
 
 ## What's in the Sheet:
-- **69 test cases** across 4 phases
+- **63 test cases** 
 - **Real-time execution status**
 - **Team collaboration**
 - **Automatic version history**
