@@ -1,5 +1,11 @@
 # Test Scripts
 
+**Team Name:** Cyber Pen  
+**Date:** November 17, 2025  
+**Version:** 1.0
+
+---
+
 ## 📊 All test scripts have been moved to Google Sheets for better collaboration
 
 ### [**→ OPEN TEST SCRIPTS IN GOOGLE SHEETS ←**](https://docs.google.com/spreadsheets/d/1HVTzzAeCkWOl7JnKip2kckogLFJ5EpZ_gWgSmEW5EL4/edit?usp=sharing)

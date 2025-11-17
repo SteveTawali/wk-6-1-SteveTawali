@@ -1,5 +1,11 @@
 # Defect Categories
 
+**Team Name:** Cyber Pen  
+**Date:** November 17, 2025  
+**Version:** 1.0
+
+---
+
 ## Purpose
 This document defines standard defect categories for consistent bug reporting and tracking.
 

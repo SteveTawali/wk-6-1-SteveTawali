@@ -1,5 +1,9 @@
 # 🐞 Bug Report (Defect Log)
 
+**Team Name:** Cyber Pen  
+**Date:** November 17, 2025  
+**Version:** 1.0
+
 ---
 
 ## ID: BUG--000
