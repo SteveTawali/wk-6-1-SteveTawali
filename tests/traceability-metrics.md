@@ -15,7 +15,7 @@
 | **FR-O03** | Payments — Paystack init with configured currency; exact cents; success/cancel/error handling; verify updates order to Paid | TC-PAY-001, TC-PAY-002, TC-PAY-003, TC-PAY-004, TC-PAY-005, TC-PAY-006, TC-PAY-007, TC-PAY-008 |  **100% Covered** | 8 |
 | **FR-O04** | Orders — Order history/list; order details with status timeline; CSV export | TC-ORD-001, TC-ORD-002, TC-ORD-003, TC-ORD-004, TC-ORD-005, TC-ORD-006 |  **100% Covered** | 6 |
 | **FR-O05** | Order lifecycle — Status transitions Pending→Paid→Fulfilled→Delivered; Cancelled/Refunded with audit trail | TC-ORD-002, TC-ORD-006 |  **33% Covered** | 2 |
-| **Catalog** | Search and discovery functionality | TC-CAT-000, TC-NAV-001, TC-NAV-002, TC-NAV-003 |  **100% Covered** | 4 |
+| **Catalog** | Search and discovery functionality | TC-CAT-000, TC-NAV-001, TC-NAV-002 |  **100% Covered** | 3 |
 | **FR-X01** | Accessibility — Labels, focus, aria-live; keyboard nav coverage | TC-A11Y-001, TC-A11Y-002, TC-A11Y-003 |  **100% Covered** | 3 |
 | **FR-X02** | Performance — LCP/TTI budgets met; lazy images; stable layout | TC-PERF-001, TC-PERF-002, TC-PERF-003 |  **100% Covered** | 3 |
 | **FR-X03** | Compatibility — Latest 2 browsers; responsive breakpoints validated | TC-BROWSER-001, TC-BROWSER-002, TC-BROWSER-003, TC-BROWSER-004, TC-DEVICE-001, TC-DEVICE-002 | **100% Covered** | 6 |
@@ -26,10 +26,10 @@
 
 | Category | Test Count | Percentage | Status |
 |----------|------------|------------|--------|
-| **Core Functional** | 36 | 52.2% |  Excellent |
-| **Checkout & Payments** | 21 | 30.4% |  Excellent |
-| **Non-Functional** | 12 | 17.4% |  Good |
-| **Total** | **69** | **100%** | |
+| **Core Functional** | 36 | 57.1% |  Excellent |
+| **Checkout & Payments** | 21 | 33.3% |  Excellent |
+| **Non-Functional** | 12 | 19.0% |  Good |
+| **Total** | **63** | **100%** | |
 
 ## Coverage Gaps Analysis
 
@@ -71,4 +71,4 @@
 | **Medium** | Performance/A11Y | 6 tests |  Adequate |
 | **Medium** | Compatibility | 6 tests |  Adequate |
 
-*Traceability Matrix Summary: 69 existing tests provide excellent coverage for core functionality with identified gaps in admin features, reviews, returns, and advanced security.*
+*Traceability Matrix Summary: 63 existing tests provide excellent coverage for core functionality with identified gaps in admin features, reviews, returns, and advanced security.*
