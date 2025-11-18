@@ -567,6 +567,12 @@ Complete details of all defects, including screenshots and reproduction steps, a
 
 The comprehensive test plan is available in [`tests/test-plan.md`](https://github.com/SteveTawali/wk-6-1-SteveTawali/blob/main/tests/test-plan.md).
 
+### 10.6 Project Management Exports
+
+Jira/GitHub Project board exports, dashboard screenshots, and issue exports are available in:
+- **Project Exports Directory**: [`tests/project-exports/`](https://github.com/SteveTawali/wk-6-1-SteveTawali/tree/main/tests/project-exports)
+- Includes: Board screenshots, dashboard views, filter results, and issue exports (CSV)
+
 ---
 
 ## 11. Executive Summary (Quick Reference)

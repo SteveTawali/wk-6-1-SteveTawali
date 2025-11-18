@@ -1,0 +1,20 @@
+Title	URL	Assignees	Status	Linked pull requests	Sub-issues progress
+Execute all test cases and record evidence	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/18	furiozamax	Done	https://github.com/SteveTawali/wk-6-1-SteveTawali/pull/19	
+Execute Test Cases and Capture defect logs with evidence	https://github.com/SteveTawali/wk-6-1-SteveTawali/pull/19	furiozamax	Done		
+Review and finalize defect categories	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/14	furiozamax, Ojutiwon-Anuoluwapo, SteveTawali	Done	https://github.com/SteveTawali/wk-6-1-SteveTawali/pull/15	
+Add defect categories document	https://github.com/SteveTawali/wk-6-1-SteveTawali/pull/15	SteveTawali	Done		
+Early scripts: add critical negatives, a11y, perf, cross-browser smoke	https://github.com/SteveTawali/wk-6-1-SteveTawali/pull/17	SteveTawali	Done		
+Create Early Manual Test Scripts	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/16	SteveTawali	Done	https://github.com/SteveTawali/wk-6-1-SteveTawali/pull/17	
+Design and document test cases (tests/test-cases.md)	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/10	SteveTawali	Done	https://github.com/SteveTawali/wk-6-1-SteveTawali/pull/13	
+feat: Add Phase 2 test case documentation	https://github.com/SteveTawali/wk-6-1-SteveTawali/pull/13	SteveTawali	Done		
+Setup and verify Bookstore app locally	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/2	furiozamax, Ojutiwon-Anuoluwapo, SteveTawali	Done		
+Create and configure GitHub Project board	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/3	SteveTawali	Done		
+Write Test Plan Document	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/4	Ojutiwon-Anuoluwapo	Done		
+Define team roles and communication plan	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/5	furiozamax, Ojutiwon-Anuoluwapo, SteveTawali	Done		
+Initialize and populate defect log (tests/defect-log.md)	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/12	furiozamax, Ojutiwon-Anuoluwapo, SteveTawali	Done	https://github.com/SteveTawali/wk-6-1-SteveTawali/pull/13	
+Capture and report defects with screenshots/videos	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/20	furiozamax	Done	https://github.com/SteveTawali/wk-6-1-SteveTawali/pull/19	0 / 5 (0%)
+Update defect log with severity and priority	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/21	furiozamax	Done	https://github.com/SteveTawali/wk-6-1-SteveTawali/pull/19	
+Prepare final QA report (tests/final-report.md)	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/22	furiozamax, Ojutiwon-Anuoluwapo, SteveTawali	Done		
+Capture dashboard screenshots or exports	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/23	furiozamax, Ojutiwon-Anuoluwapo, SteveTawali	In Progress		
+Record 5-minute video presentation	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/24	furiozamax, Ojutiwon-Anuoluwapo, SteveTawali	In Progress		
+Commit all final documents to main branch	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/25	furiozamax, Ojutiwon-Anuoluwapo, SteveTawali	In Progress		

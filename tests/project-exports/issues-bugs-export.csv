@@ -1,0 +1,6 @@
+"Number","Title","State","Labels","Assignees","Created"
+30,"TC-DEVICE-001 BUG--004 Mobile Responsiveness - iPhone (375×667)","OPEN","bug","furiozamax","2025-11-16T10:18:35Z"
+29,"TC-CHK-007 BUG--003 Country Field Should Reject Numeric Values","OPEN","bug","furiozamax","2025-11-16T10:16:13Z"
+28,"TC-CHK-006 BUG--002 City Field Should Reject Numeric Values","OPEN","bug","furiozamax","2025-11-16T10:13:44Z"
+27,"TC-CHK-005 BUG--001 Shipping Form - Postal Code Format Validation","OPEN","bug","furiozamax","2025-11-16T10:12:12Z"
+26,"TC-NAV-002 BUG--000 Navbar search does not return any results","OPEN","bug","furiozamax","2025-11-16T10:08:22Z"

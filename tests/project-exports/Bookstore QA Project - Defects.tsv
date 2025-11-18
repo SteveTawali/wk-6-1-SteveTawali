@@ -1,0 +1,6 @@
+Title	URL	Assignees	Status	Labels
+TC-NAV-002 BUG--000 Navbar search does not return any results	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/26	furiozamax	In Review	bug
+TC-DEVICE-001 BUG--004 Mobile Responsiveness - iPhone (375×667)	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/30	furiozamax	In Review	bug
+TC-CHK-007 BUG--003 Country Field Should Reject Numeric Values	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/29	furiozamax	In Review	bug
+TC-CHK-005 BUG--001 Shipping Form - Postal Code Format Validation	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/27	furiozamax	In Review	bug
+TC-CHK-006 BUG--002 City Field Should Reject Numeric Values	https://github.com/SteveTawali/wk-6-1-SteveTawali/issues/28	furiozamax	In Review	bug
