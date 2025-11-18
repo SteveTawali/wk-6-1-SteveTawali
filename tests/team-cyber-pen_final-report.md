@@ -223,7 +223,7 @@ The testing process followed these phases:
 
    
 
-3. **Defect Management(Ongoing)**  
+3. **Defect Management(November 16-17, 2025\)**  
      
    - Defects logged in defect log with severity and priority assignments  
    - Defect triage and prioritization  
@@ -338,6 +338,9 @@ A total of 5 defects were identified during the testing cycle, categorized by se
    - **Root Cause**: CSS layout issue on mobile viewport.  
    - **Current Status**: Open, awaiting fix  
    - **Mitigation Plan**: Users can rotate phone to landscape or zoom in/out. Development team to apply CSS fixes for mobile compatibility.
+<img width="1470" height="956" alt="Screenshot 2025-11-18 at 14 08 53" src="https://github.com/user-attachments/assets/0672a8cc-ab88-4ba2-a3d2-1f06242420a1" />
+
+   
 
 ### 5.4 Defect Trend Analysis
 
@@ -618,4 +621,7 @@ By signing above, approvers acknowledge they have reviewed this report in its en
 ---
 
 *End of Test Report*
+
+<img width="422" height="422" alt="Untitled design" src="https://github.com/user-attachments/assets/82203fd0-f66d-44a2-9aeb-2f70bc30b306" />
+
 
