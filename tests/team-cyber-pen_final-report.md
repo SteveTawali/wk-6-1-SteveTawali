@@ -609,12 +609,9 @@ The following stakeholders have reviewed this report and approve the release rec
 | Role | Name | Approval Date | Signature | Notes |
 | :---- | :---- | :---- | :---- | :---- |
 | Test Manager (QA Lead) | Anu | November 17, 2025 | \[Approved\] | Approves release with conditions noted in section 7.4 |
-| Test Designer / Risk Analyst | Steven | November 17, 2025 | \[Approved\] | Reviewed and approved test coverage and risk assessment |
-| Test Executor | Kevin | November 17, 2025 | \[Approved\] | Verified test execution results and defect reporting |
-| Development Lead | TBD | TBD | \[Pending\] | Awaiting review |
-| Product Owner | TBD | TBD | \[Pending\] | Awaiting review |
-| Security Officer | TBD | TBD | \[Pending\] | Awaiting review |
-| Release Manager | TBD | TBD | \[Pending\] | Awaiting review |
+| Test Designer / Risk Analyst | Steven Gulu | November 17, 2025 | \[Approved\] | Reviewed and approved test coverage and risk assessment |
+| Test Executor | Kelvin Too | November 17, 2025 | \[Approved\] | Verified test execution results and defect reporting |
+
 
 By signing above, approvers acknowledge they have reviewed this report in its entirety and understand the current state of the application, including any limitations, risks, and mitigation plans.
 
