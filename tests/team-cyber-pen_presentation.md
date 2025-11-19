@@ -4,6 +4,14 @@
 **Date:** November 17, 2025  
 **Version:** 1.0
 
+## Team Members
+
+| Name | Role | Responsibilities |
+|:-----|:-----|:-----------------|
+| Steven Gulu | Test Designer / Risk Analyst | Identifies and analyzes risks, designs test cases, creates test scenarios and test data |
+| Anu | Test Manager (QA Lead) | Manages test planning, strategy, resources, progress tracking, metrics definition, and stakeholder communication |
+| Kelvin Too | Test Executor | Executes test cases, records results, reports defects, and verifies application functionality |
+
 ---
 
 ## 5-Minute Video Presentation
